@@ -1,0 +1,91 @@
+.unslider-fade,
+.unslider-wrap {
+    position: relative
+}
+
+.unslider-arrow,
+.unslider-nav ol li {
+    display: inline-block;
+    cursor: pointer
+}
+
+.unslider {
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+.unslider-wrap.unslider-carousel>li {
+    float: left
+}
+
+.unslider-vertical>ul {
+    height: 100%
+}
+
+.unslider-vertical li {
+    float: none;
+    width: 100%
+}
+
+.unslider-fade .unslider-wrap li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 8
+}
+
+.unslider-fade .unslider-wrap li.unslider-active {
+    z-index: 10
+}
+
+.unslider li,
+.unslider ol,
+.unslider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none
+}
+
+.unslider-arrow {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/arrow-next.svg);
+    z-index: 2;
+    color: transparent!important
+}
+
+.unslider-arrow.prev {
+    transform: rotate(-180deg)
+}
+
+.unslider-arrow:hover {
+    opacity: .5
+}
+
+unslider-nav ol {
+    list-style: none;
+    text-align: center
+}
+
+.unslider-nav ol li {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: 0 0;
+    border-radius: 5px;
+    overflow: hidden;
+    text-indent: -999em;
+    background: #bce498;
+    &:hover {
+        background: #fff;
+    }
+}
+
+.unslider-nav ol li.unslider-active {
+    background: #fff;
+    cursor: pointer;
+}
